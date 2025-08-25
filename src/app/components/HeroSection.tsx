@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react"
 
 export default function HeroSection() {
     return (
-    <section
+        <section
         id="inicio"
         className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-800 to-orange-700 overflow-hidden"
         >
@@ -20,7 +20,7 @@ export default function HeroSection() {
         <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
             <div className="mb-8 animate-fade-in">
             <Image
-                src="/logo_iglesia.jpg"
+                src="/logo-iglesia.jpg"
                 alt="Logo Fe y Esperanza Galicia"
                 width={200}
                 height={200}
@@ -43,18 +43,24 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-600">
-            <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg">
+            <a
+                href="#contacto"
+                className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg text-center inline-block"
+            >
                 Únete a Nosotros
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105">
+            </a>
+            <a
+                href="#nosotros"
+                className="border-2 border-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 text-center inline-block"
+            >
                 Conoce Más
-            </button>
+            </a>
             </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <ChevronDown size={32} className="text-white/70" />
         </div>
-    </section>
+        </section>
     )
 }

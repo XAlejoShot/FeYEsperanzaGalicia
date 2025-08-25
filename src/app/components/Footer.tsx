@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col items-center text-center">
             <Image
-                src="/logo_iglesia.jpg"
+                src="/logo-iglesia.jpg"
                 alt="Logo Fe y Esperanza Galicia"
                 width={80}
                 height={80}

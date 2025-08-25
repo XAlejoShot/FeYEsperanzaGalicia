@@ -8,7 +8,7 @@ export default function Header() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-4">
             <Image
-              src="/logo_iglesia.jpg"
+              src="/logo-iglesia.jpg"
               alt="Logo Fe y Esperanza Galicia"
               width={60}
               height={60}
@@ -38,12 +38,6 @@ export default function Header() {
               className="hover:text-yellow-300 transition-colors duration-300 hover:scale-105 transform"
             >
               Servicios
-            </Link>
-            <Link
-              href="#actividades"
-              className="hover:text-yellow-300 transition-colors duration-300 hover:scale-105 transform"
-            >
-              Actividades
             </Link>
             <Link
               href="#contacto"
