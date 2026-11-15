@@ -10,10 +10,10 @@ export default function SmoothScroll() {
       const href = target.getAttribute("href")
 
       if (href && href.startsWith("#")) {
-        e.preventDefault()
         const targetElement = document.querySelector(href)
 
         if (targetElement) {
+          e.preventDefault()
           // Agregar efecto de "flash" al elemento objetivo
           const addFlashEffect = () => {
             targetElement.classList.add("animate-pulse")
